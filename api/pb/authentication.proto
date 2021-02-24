@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package pb;
+
+message Request {
+  string accessToken = 1;
+}
+
+message Response {
+  int32  code = 1;
+  string msg = 2;
+  string body = 3;
+}
+
+service Authentication {
+  rpc Auth(Request) returns (Response);
+}
