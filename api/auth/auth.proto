@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package pb;
-option go_package = "authentication/api/pb";
+package auth;
+option go_package = "authentication/api/auth";
 
 message Request {
   string accessToken = 1;
